@@ -17,7 +17,7 @@
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/elements/__item/elements__item.css);
 @import url(../blocks/elements/__image/elements__image.css);
-@import url(../blocks/elements/__photo-caption/__photo-caption.css);
+@import url(../blocks/elements/__photo-caption/elements__photo-caption.css);
 @import url(../blocks/elements/__caption/elements__caption.css);
 @import url(../blocks/elements/__button-like/elements__button-like.css);
 

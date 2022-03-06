@@ -4,7 +4,7 @@
   height: 24px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: Transparent;
   cursor: pointer;
   margin-left: 18px;
   padding: 0;
@@ -14,7 +14,7 @@
 }
 
 .profile__edit-button:hover{
-  opacity: .7;
+  opacity: .6;
 }
 
 @media screen and (max-width: 900px) {
