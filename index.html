@@ -2,88 +2,68 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
   </head>
   <body class="page">
     <header class="header">
-      <img src="./images/logo.svg" alt="место" class="header__logo" />
+      <img src="./images/logo.svg" alt="место" class="header__logo">
     </header>
     <main class="content">
       <section class="profile">
-        <img src="./images/GSevOset.png" alt="Герб" class="profile__avatar" />
+        <img src="./images/GSevOset.png" alt="Герб" class="profile__avatar">
         <div class="profile__info">
           <h1 class="profile__title">Бородин Артур</h1>
           <button class="profile__edit-button" type="button"></button>
         </div>
         <p class="profile__subtitle">Путешественник по Кавказу</p>
-        <button
-          class="profile__add-button"
-          aria-label="Редактировать"
-          type="button"
-        ></button>
+        <button class="profile__add-button" aria-label="Редактировать" type="button"></button>
       </section>
       <section class="elements">
-        <figure class="elements__item">
-          <img
-            src="./images/1.jpg"
-            class="elements__image"
-            alt="Зругское ущелье"
-          />
-          <figcaption class="elements__photo-caption">
+        <div class="elements__item">
+          <img src="./images/1.jpg" class="elements__image" alt="Зругское ущелье">
+          <div class="elements__photo-caption">
             <h2 class="elements__caption">Зругское ущелье</h2>
             <button class="elements__button-like" type="button"></button>
-          </figcaption>
-        </figure>
-        <figure class="elements__item">
-          <img
-            src="./images/2.jpg"
-            class="elements__image"
-            alt="Военнно-грузинская дорога"
-          />
-          <figcaption class="elements__photo-caption">
+          </div>
+        </div>
+        <div class="elements__item">
+          <img src="./images/2.jpg" class="elements__image" alt="Военнно-грузинская дорога">
+          <div class="elements__photo-caption">
             <h2 class="elements__caption">Военнно-грузинская дорога</h2>
             <button class="elements__button-like" type="button"></button>
-          </figcaption>
-        </figure>
-        <figure class="elements__item">
-          <img src="./images/3.jpg" class="elements__image" alt="Гора Хиах" />
-          <figcaption class="elements__photo-caption">
+          </div>
+        </div>
+        <div class="elements__item">
+          <img src="./images/3.jpg" class="elements__image" alt="Гора Хиах">
+          <div class="elements__photo-caption">
             <h2 class="elements__caption">Гора Хиах</h2>
             <button class="elements__button-like" type="button"></button>
-          </figcaption>
-        </figure>
-        <figure class="elements__item">
-          <img src="./images/4.jpg" class="elements__image" alt="Фиагдон" />
-          <figcaption class="elements__photo-caption">
+          </div>
+        </div>
+        <div class="elements__item">
+          <img src="./images/4.jpg" class="elements__image" alt="Фиагдон">
+          <div class="elements__photo-caption">
             <h2 class="elements__caption">Фиагдон</h2>
             <button class="elements__button-like" type="button"></button>
-          </figcaption>
-        </figure>
-        <figure class="elements__item">
-          <img
-            src="./images/5.jpeg"
-            class="elements__image"
-            alt="Башня Хестановых"
-          />
-          <figcaption class="elements__photo-caption">
+          </div>
+        </div>
+        <div class="elements__item">
+          <img src="./images/5.jpeg" class="elements__image" alt="Башня Хестановых">
+          <div class="elements__photo-caption">
             <h2 class="elements__caption">Башня Хестановых</h2>
             <button class="elements__button-like" type="button"></button>
-          </figcaption>
-        </figure>
-        <figure class="elements__item">
-          <img
-            src="./images/6.jpg"
-            class="elements__image"
-            alt="Дигорское ущелье"
-          />
-          <figcaption class="elements__photo-caption">
+          </div>
+        </div>
+        <div class="elements__item">
+          <img src="./images/6.jpg" class="elements__image" alt="Дигорское ущелье">
+          <div class="elements__photo-caption">
             <h2 class="elements__caption">Дигорское ущелье</h2>
             <button class="elements__button-like" type="button"></button>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -95,20 +75,8 @@
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" name="popup">
           <fieldset class="popup__fieldset">
-            <input
-              class="popup__form-text"
-              type="text"
-              placeholder="Жак-Ив Кусто"
-              value="Бородин Артур"
-              name="name"
-            />
-            <input
-              class="popup__form-text"
-              type="text"
-              placeholder="Исследователь океана"
-              value="Путешественник по Северному Кавказу"
-              name="about"
-            />
+            <input class="popup__form-text" type="text" placeholder="Жак-Ив Кусто" value="Бородин Артур" name="name">
+            <input class="popup__form-text" type="text" placeholder="Исследователь океана" value="Путешественник по Северному Кавказу" name="about">
             <button class="popup__submit-button" type="submit">
               Сохранить
             </button>
