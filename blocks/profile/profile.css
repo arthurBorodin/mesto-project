@@ -3,7 +3,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: 150px auto 150px;
-  grid-template-rows: repeat(2, 60px);
+  grid-template-rows: repeat(1, 70px 50px);
   position: relative;
   margin-bottom: 51px;
   margin-top: 40px;
