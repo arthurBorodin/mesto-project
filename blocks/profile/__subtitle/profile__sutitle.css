@@ -1,5 +1,5 @@
 .profile__subtitle {
-  max-width: 336px;
+  /* max-width: 336px;
   grid-column: 2/3;
   grid-row: 2/3;
   margin: 0;
@@ -10,15 +10,26 @@
   line-height: 22px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden; */
+  margin: 8px 0 0;
+  text-overflow: ellipsis;
+  max-width: 336px;
   overflow: hidden;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 @media screen and (max-width: 900px) {
   .profile__subtitle {
-    max-width: 282px;
+    /* max-width: 282px;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px; */
+    font-size: 14px;
+    line-height: 17px;
   }
 }

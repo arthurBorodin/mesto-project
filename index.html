@@ -17,72 +17,61 @@
         <div class="profile__info">
           <h1 class="profile__title">Бородин Артур</h1>
           <button class="profile__edit-button" type="button"></button>
+          <p class="profile__subtitle">Путешественник по Кавказу</p>
         </div>
-        <p class="profile__subtitle">Путешественник по Кавказу</p>
         <button class="profile__add-button" aria-label="Редактировать" type="button"></button>
       </section>
-      <section class="elements">
-        <div class="elements__item">
-          <img src="./images/1.jpg" class="elements__image" alt="Зругское ущелье">
-          <div class="elements__photo-caption">
-            <h2 class="elements__caption">Зругское ущелье</h2>
-            <button class="elements__button-like" type="button"></button>
-          </div>
-        </div>
-        <div class="elements__item">
-          <img src="./images/2.jpg" class="elements__image" alt="Военнно-грузинская дорога">
-          <div class="elements__photo-caption">
-            <h2 class="elements__caption">Военнно-грузинская дорога</h2>
-            <button class="elements__button-like" type="button"></button>
-          </div>
-        </div>
-        <div class="elements__item">
-          <img src="./images/3.jpg" class="elements__image" alt="Гора Хиах">
-          <div class="elements__photo-caption">
-            <h2 class="elements__caption">Гора Хиах</h2>
-            <button class="elements__button-like" type="button"></button>
-          </div>
-        </div>
-        <div class="elements__item">
-          <img src="./images/4.jpg" class="elements__image" alt="Фиагдон">
-          <div class="elements__photo-caption">
-            <h2 class="elements__caption">Фиагдон</h2>
-            <button class="elements__button-like" type="button"></button>
-          </div>
-        </div>
-        <div class="elements__item">
-          <img src="./images/5.jpeg" class="elements__image" alt="Башня Хестановых">
-          <div class="elements__photo-caption">
-            <h2 class="elements__caption">Башня Хестановых</h2>
-            <button class="elements__button-like" type="button"></button>
-          </div>
-        </div>
-        <div class="elements__item">
-          <img src="./images/6.jpg" class="elements__image" alt="Дигорское ущелье">
-          <div class="elements__photo-caption">
-            <h2 class="elements__caption">Дигорское ущелье</h2>
-            <button class="elements__button-like" type="button"></button>
-          </div>
-        </div>
-      </section>
+    <section class="elements">
+      <ul class="elements__card"></ul>
+    </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&#169; 2020 Mesto Russia</p>
     </footer>
-    <div class="popup">
+
+    <div class="popup popup_edit">
       <div class="popup__container">
         <button class="popup__close-icon" type="button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="popup">
+        <form class="popup__form" name="popup_edit" action="#">
           <fieldset class="popup__fieldset">
-            <input class="popup__form-text" type="text" placeholder="Жак-Ив Кусто" value="Бородин Артур" name="name">
-            <input class="popup__form-text" type="text" placeholder="Исследователь океана" value="Путешественник по Северному Кавказу" name="about">
-            <button class="popup__submit-button" type="submit">
-              Сохранить
-            </button>
+            <input class="popup__form-text" type="text" id="name" placeholder="Ваше имя" value="Бородин Артур" name="name">
+            <input class="popup__form-text" type="text" id="about" placeholder="Деятельность" value="Путешественник по  Кавказу" name="about">
+            <button class="popup__submit-button" type="submit">Сохранить</button>
           </fieldset>
         </form>
       </div>
     </div>
+    <div class="popup popup_add">
+      <div class="popup__container">
+        <button class="popup__close-icon" type="button"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form popup__form-add" name="popup_add" action="#">
+          <fieldset class="popup__fieldset">
+            <input class="popup__form-text" type="text" id="Newname" placeholder="Название" name="name">
+            <input class="popup__form-text" type="text" id="Newabout" placeholder="Ссылка на картинку" name="about">
+            <button class="popup__submit-button" type="submit">Создать</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <section class="popup popup_zoom">
+      <div class="popup__container-zoom">
+          <button class="popup__close-icon" type="button" aria-label="Закрыть"></button>
+          <img class="popup__cards" alt="user_place">
+          <h2 class="popup__card-title"></h2>
+      </div>
+    </section>
+    <template id="elements-template">
+        <li class="elements__item">
+            <img class="elements__image" src="#" alt="user_place">
+            <button class="elements__delete" type="button" aria-label="Корзина"></button>
+          <div class="elements__photo-caption">
+            <h2 class="elements__caption"></h2>
+            <button class="elements__button-like" type="button" aria-label="Лайк"></button>
+          </div>
+        </li>
+    </template>
+    <script src="script.js"></script>
   </body>
 </html>
